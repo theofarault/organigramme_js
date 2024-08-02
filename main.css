@@ -1,0 +1,50 @@
+body{
+    padding:0;
+    margin: 0;
+}
+
+#container{
+    background-color: #212228;
+    background-image: linear-gradient(#292a30 .1em, transparent .1em), linear-gradient(90deg, #292a30 .1em, transparent .1em);
+    background-size: 4em 4em;
+    height: 100vh;
+}
+
+#card{
+    width:400px;
+    height: 400px;
+    background-color: #AFDA9F;
+    border-radius: 5px;
+    cursor:pointer;
+    position:fixed;
+}
+
+.resize-handle {
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    cursor: nwse-resize;
+    z-index: 1;
+}
+
+#card .top-left {
+    top: -6px;
+    left: -6px;
+}
+
+#card .top-right {
+    top: -6px;
+    right: -6px;
+}
+
+#card .bottom-left {
+    bottom: -6px;
+    left: -6px;
+}
+
+#card .bottom-right {
+    bottom: -6px;
+    right: -6px;
+}
