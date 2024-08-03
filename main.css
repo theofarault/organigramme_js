@@ -22,29 +22,64 @@ body{
 .resize-handle {
     width: 10px;
     height: 10px;
-    background-color: blue;
-    border-radius: 50%;
+    background-color: #000;
     position: absolute;
+  }
+  
+  .resize-handle.top-left {
+    top: -5px;
+    left: -5px;
     cursor: nwse-resize;
-    z-index: 1;
-}
-
-#card .top-left {
-    top: -6px;
-    left: -6px;
-}
-
-#card .top-right {
-    top: -6px;
-    right: -6px;
-}
-
-#card .bottom-left {
-    bottom: -6px;
-    left: -6px;
-}
-
-#card .bottom-right {
-    bottom: -6px;
-    right: -6px;
-}
+  }
+  
+  .resize-handle.top-right {
+    top: -5px;
+    right: -5px;
+    cursor: nesw-resize;
+  }
+  
+  .resize-handle.bottom-left {
+    bottom: -5px;
+    left: -5px;
+    cursor: nesw-resize;
+  }
+  
+  .resize-handle.bottom-right {
+    bottom: -5px;
+    right: -5px;
+    cursor: nwse-resize;
+  }
+  
+  .resize-handle.left, .resize-handle.right, .resize-handle.top, .resize-handle.bottom {
+    background: transparent;
+  }
+  
+  .resize-handle.left, .resize-handle.right {
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    cursor: ew-resize;
+  }
+  
+  .resize-handle.left {
+    left: -5px;
+  }
+  
+  .resize-handle.right {
+    right: -5px;
+  }
+  
+  .resize-handle.top, .resize-handle.bottom {
+    left: 0;
+    right: 0;
+    height: 5px;
+    cursor: ns-resize;
+  }
+  
+  .resize-handle.top {
+    top: -5px;
+  }
+  
+  .resize-handle.bottom {
+    bottom: -5px;
+  }
